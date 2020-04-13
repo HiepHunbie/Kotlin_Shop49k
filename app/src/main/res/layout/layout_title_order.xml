@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+android:orientation="horizontal">
+
+
+    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:id="@+id/layout_all_order">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:orientation="vertical"
+                      android:layout_centerVertical="true">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:text="@string/all"
+                      android:textColor="@color/text_hide_home"
+                      android:textSize="@dimen/_13sdp"
+                      android:gravity="center"
+                      android:layout_centerVertical="true"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="@dimen/_2sdp"
+              android:layout_weight="1"
+              android:id="@+id/txt_all_orders"
+              android:gravity="center_horizontal"
+              android:background="@color/num_circle_text_units"
+              android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:id="@+id/layout_shipping_orders">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:orientation="vertical"
+                      android:layout_centerVertical="true">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:text="@string/shipping"
+                      android:textColor="@color/text_hide_home"
+                      android:textSize="@dimen/_13sdp"
+                      android:gravity="center"
+                      android:layout_centerVertical="true"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="@dimen/_2sdp"
+              android:layout_weight="1"
+              android:id="@+id/txt_shipping_orders"
+              android:gravity="center_horizontal"
+              android:background="@color/num_circle_text_units"
+              android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:id="@+id/layout_shipped_order">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:orientation="vertical"
+                      android:layout_centerVertical="true">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:text="@string/shipped"
+                      android:textColor="@color/text_hide_home"
+                      android:textSize="@dimen/_13sdp"
+                      android:gravity="center"
+                      android:layout_centerVertical="true"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="@dimen/_2sdp"
+              android:layout_weight="1"
+              android:id="@+id/txt_shipped_order"
+              android:gravity="center_horizontal"
+              android:background="@color/num_circle_text_units"
+              android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:id="@+id/layout_return_product_orders">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:orientation="vertical"
+                      android:layout_centerVertical="true">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:text="@string/return_product"
+                      android:textColor="@color/text_hide_home"
+                      android:textSize="@dimen/_13sdp"
+                      android:gravity="center"
+                      android:layout_centerVertical="true"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="@dimen/_2sdp"
+              android:layout_weight="1"
+              android:id="@+id/txt_return_product_orders"
+              android:gravity="center_horizontal"
+              android:background="@color/num_circle_text_units"
+              android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

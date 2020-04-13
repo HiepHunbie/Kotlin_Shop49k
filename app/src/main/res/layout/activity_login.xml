@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+    >
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        >
+        <LinearLayout
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+        >
+
+            <View android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_weight="80"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/xin_chao"
+                      android:textColor="@color/text_black"
+                      android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                      android:gravity="top"
+                      android:textSize="@dimen/_14sdp"
+                      android:paddingBottom="@dimen/_3sdp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/title_small_login"
+                      android:textColor="@color/text_hide"
+                      android:gravity="center_vertical"
+                      android:textSize="@dimen/_11sdp"
+            />
+            <View android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_weight="48"/>
+
+            <EditText android:layout_width="match_parent" android:layout_height="0dp"
+                      android:layout_weight="48"
+                      android:background="@drawable/custom_edittext_login"
+                      android:textSize="@dimen/_10sdp"
+                      android:hint="@string/hint_user_name"
+                      android:textColor="@color/text_black"
+                      android:textColorHint="@color/text_hide"
+                      android:paddingLeft="@dimen/_15sdp"
+                      android:paddingRight="@dimen/_10sdp"
+                      android:id="@+id/edt_user_name"
+                      android:text=""/>
+            <View android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_weight="12"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp"
+                            android:layout_weight="48"
+                            android:background="@drawable/custom_edittext_login">
+
+                <EditText android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:background="@drawable/custom_edittext_login"
+                          android:textSize="@dimen/_10sdp"
+                          android:hint="@string/hint_pass_word"
+                          android:textColor="@color/text_black"
+                          android:textColorHint="@color/text_hide"
+                          android:paddingLeft="@dimen/_15sdp"
+                          android:paddingRight="@dimen/_10sdp"
+                          android:id="@+id/edt_pass_word"
+                          android:inputType="textPassword"
+                          android:text=""/>
+
+                <ImageView android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp"
+                           android:src="@drawable/ic_show_pass"
+                           android:layout_centerVertical="true"
+                           android:layout_alignParentRight="true"
+                           android:layout_marginRight="@dimen/_15sdp"
+                           android:id="@+id/img_show_pass"/>
+            </RelativeLayout>
+            <View android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_weight="16"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="0dp"
+                      android:layout_weight="48"
+                      android:background="@drawable/custom_button_login"
+                      android:id="@+id/txt_login"
+                      android:text="@string/dang_nhap_big"
+                      android:textColor="@color/white"
+                      android:gravity="center"
+                      android:textSize="@dimen/_11sdp"
+                      android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"/>
+            <View android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_weight="34"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/forgot_pass"
+                      android:textSize="@dimen/_11sdp"
+                      android:textColor="@color/text_forgot_pass"
+                      android:layout_gravity="center_horizontal"
+                      android:id="@+id/txt_forgot_password"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_medium"/>
+            <View android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_weight="282"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_gravity="center_horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/dont_have_account"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_black"
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/sign_up_small"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_forgot_pass"
+                          android:fontFamily="@font/montserrat_medium"
+                          android:id="@+id/txt_sign_up"
+                          android:layout_marginLeft="@dimen/_3sdp"
+                          android:paddingTop="@dimen/_10sdp"
+                          android:paddingBottom="@dimen/_10sdp"
+                />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_weight="48"/>
+        </LinearLayout>
+
+            <ImageView android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_40sdp"
+                       android:src="@drawable/ic_back"
+                       android:id="@+id/img_back_login"
+                       android:paddingRight="@dimen/_30sdp"
+                       android:paddingBottom="@dimen/_20sdp"
+                       android:layout_marginTop="@dimen/_15sdp"
+                       android:layout_marginBottom="@dimen/_20sdp"
+                       android:layout_marginLeft="@dimen/_20sdp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_130sdp"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:id="@+id/prg_login"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:background="@color/trans_black_80"
+            android:clickable="true"/>
+</RelativeLayout>

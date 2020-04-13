@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+                android:background="@color/trans_black_80">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:background="@drawable/custom_dialog_botton_offer"
+                  android:padding="@dimen/_1sdp"
+    android:layout_alignParentBottom="true">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/select"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+            android:layout_centerInParent="true"
+            />
+
+            <ImageView android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp"
+            android:id="@+id/img_close_popup_picture"
+            android:src="@drawable/ic_delete_gray"
+                       android:padding="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            />
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout_capture_image"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/background_main"
+        android:layoutDirection="rtl">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/capture"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/text_black"
+            android:gravity="center"
+            android:paddingRight="@dimen/_10sdp"
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:id="@+id/layout_get_picture_from_gallery"
+                      android:padding="@dimen/_10sdp"
+                      android:background="@color/white"
+                      android:layoutDirection="rtl">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/get_from_gallery"
+                      android:textSize="@dimen/_11sdp"
+                      android:textColor="@color/text_black"
+                      android:gravity="center"
+                      android:paddingRight="@dimen/_10sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

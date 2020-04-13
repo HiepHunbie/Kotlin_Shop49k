@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/trans_black_80">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:background="@drawable/custom_dialog_botton_offer"
+                  android:padding="@dimen/_1sdp"
+                  android:layout_alignParentBottom="true">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/input_code_by_hand"
+                      android:textColor="@color/text_black"
+                      android:textSize="@dimen/_14sdp"
+                      android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                      android:layout_centerInParent="true"
+                      android:id="@+id/txt_title_popup"
+            />
+
+            <ImageView android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp"
+                       android:id="@+id/img_close_popup"
+                       android:src="@drawable/ic_delete_gray"
+                       android:padding="@dimen/_10sdp"
+                       android:layout_alignParentRight="true"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/custom_edittext_qr_code_input"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/edt_qr_code"
+            android:hint="@string/input_code_delivery"
+            android:textColorHint="@color/text_hide_home"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/text_black"
+            android:singleLine="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

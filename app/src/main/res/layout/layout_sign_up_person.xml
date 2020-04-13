@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_30sdp"
+    android:layout_marginRight="@dimen/_30sdp"
+    android:orientation="vertical">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/sign_up_info_person"
+                  android:textColor="@color/text_black"
+                  android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                  android:gravity="top"
+                  android:textSize="@dimen/_14sdp"
+                  android:paddingBottom="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_50sdp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/please_done_form_person"
+                  android:textColor="@color/text_hide"
+                  android:gravity="center_vertical"
+                  android:textSize="@dimen/_11sdp"
+                  android:layout_marginBottom="@dimen/_30sdp"
+        />
+
+        <EditText android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                  android:background="@drawable/custom_edittext_login"
+                  android:textSize="@dimen/_10sdp"
+                  android:hint="@string/your_name"
+                  android:textColor="@color/text_black"
+                  android:textColorHint="@color/text_hide"
+                  android:paddingLeft="@dimen/_15sdp"
+                  android:paddingRight="@dimen/_15sdp"
+                  android:id="@+id/edt_your_name"
+        android:layout_marginBottom="@dimen/_10sdp"/>
+        <EditText android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                  android:background="@drawable/custom_edittext_login"
+                  android:textSize="@dimen/_10sdp"
+                  android:hint="@string/citizen_id"
+                  android:textColor="@color/text_black"
+                  android:textColorHint="@color/text_hide"
+                  android:paddingLeft="@dimen/_15sdp"
+                  android:paddingRight="@dimen/_15sdp"
+                  android:id="@+id/edt_citizen_id"
+                  android:layout_marginBottom="@dimen/_10sdp"/>
+        <EditText android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                  android:background="@drawable/custom_edittext_login"
+                  android:textSize="@dimen/_10sdp"
+                  android:hint="@string/your_email"
+                  android:textColor="@color/text_black"
+                  android:textColorHint="@color/text_hide"
+                  android:paddingLeft="@dimen/_15sdp"
+                  android:paddingRight="@dimen/_15sdp"
+                  android:id="@+id/edt_your_email"
+                  android:layout_marginBottom="@dimen/_10sdp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/custom_edittext_login">
+
+            <EditText android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:background="@drawable/custom_edittext_login"
+                      android:textSize="@dimen/_10sdp"
+                      android:hint="@string/new_pass_word"
+                      android:textColor="@color/text_black"
+                      android:textColorHint="@color/text_hide"
+                      android:paddingLeft="@dimen/_15sdp"
+                      android:paddingRight="@dimen/_15sdp"
+                      android:id="@+id/edt_new_pass_word"
+            android:inputType="textPassword"/>
+
+            <ImageView android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp"
+                       android:src="@drawable/ic_show_pass"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="@dimen/_15sdp"
+                       android:id="@+id/img_show_pass"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp">
+
+            <com.github.lguipeng.library.animcheckbox.AnimCheckBox android:layout_width="@dimen/_15sdp"
+                                                                   android:layout_height="@dimen/_15sdp"
+                                                                   android:id="@+id/rdo_check_sign_up_person"
+                                                                   app:stroke_width="1dp"
+                                                                   app:stroke_color="@color/button_main_hide"
+                                                                   app:circle_color="@color/button_login"
+                                                                   app:checked="false"
+                                                                   android:layout_marginRight="@dimen/_3sdp"
+            />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+            android:layout_toRightOf="@+id/rdo_check_sign_up_person">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/ok_with"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_black"
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/provision"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_forgot_pass"                           android:fontFamily="@font/montserrat_medium"
+                          android:id="@+id/txt_sign_up"
+                          android:layout_marginLeft="@dimen/_2sdp"
+                          android:layout_marginRight="@dimen/_2sdp"
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/of_49kshop_vn"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_black"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                  android:background="@drawable/custom_button_login"
+                  android:id="@+id/txt_continue"
+                  android:text="@string/continue_big"
+                  android:textColor="@color/white"
+                  android:gravity="center"
+                  android:textSize="@dimen/_11sdp"
+                  android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                  android:layout_marginTop="@dimen/_35sdp"/>
+    </LinearLayout>
+    <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+               android:src="@drawable/ic_back"
+               android:id="@+id/img_back_sign_up_shop_info"
+               android:layout_marginTop="@dimen/_15sdp"
+               android:layout_marginBottom="@dimen/_20sdp"
+               android:layout_marginLeft="@dimen/_20sdp"/>
+</RelativeLayout>
+</ScrollView>

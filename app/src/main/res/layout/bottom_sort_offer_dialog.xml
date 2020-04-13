@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+                android:background="@color/trans_black_80">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:background="@drawable/custom_dialog_botton_offer"
+                  android:padding="@dimen/_1sdp"
+    android:layout_alignParentBottom="true">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/select_offer"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+            android:layout_centerInParent="true"
+                      android:id="@+id/txt_title"
+            />
+
+            <ImageView android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp"
+            android:id="@+id/img_close_popup"
+            android:src="@drawable/ic_delete_gray"
+                       android:padding="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            />
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout_all_sort_offer"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/background_main"
+        android:layoutDirection="rtl">
+            <RadioButton
+                    android:id="@+id/chk_all_sort_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="@color/checkbox_green"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/all"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/text_black"
+            android:gravity="left"
+            android:paddingRight="@dimen/_10sdp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:id="@+id/layout_new_sort_offer"
+                      android:padding="@dimen/_10sdp"
+                      android:background="@color/white"
+                      android:layoutDirection="rtl">
+            <RadioButton
+                    android:id="@+id/chk_new_sort_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="@color/checkbox_green"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/newest"
+                      android:textSize="@dimen/_11sdp"
+                      android:textColor="@color/text_black"
+                      android:gravity="left"
+                      android:paddingRight="@dimen/_10sdp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:id="@+id/layout_by_name_sort_offer"
+                      android:padding="@dimen/_10sdp"
+                      android:background="@color/white"
+                      android:layoutDirection="rtl">
+            <RadioButton
+                    android:id="@+id/chk_by_name_sort_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="@color/checkbox_green"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/by_name"
+                      android:textSize="@dimen/_11sdp"
+                      android:textColor="@color/text_black"
+                      android:gravity="left"
+                      android:paddingRight="@dimen/_10sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

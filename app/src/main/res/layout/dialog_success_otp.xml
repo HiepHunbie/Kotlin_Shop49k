@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext_login_dialog"
+                    android:padding="@dimen/_20sdp"
+    android:layout_margin="@dimen/_20sdp">
+        <ImageView
+                android:id="@+id/cover_image"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:srcCompat="@drawable/ic_done"
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/title_success_otp"
+                  android:textColor="@color/text_black"
+                  android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                  android:gravity="center_horizontal"
+                  android:textSize="@dimen/_14sdp"
+                  android:id="@+id/txt_title_success_otp"
+                  android:layout_below="@+id/cover_image"
+                  android:layout_marginBottom="@dimen/_10sdp"
+        />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/title_small_success_otp"
+                  android:textColor="@color/text_hide"
+                  android:gravity="center_horizontal"
+                  android:textSize="@dimen/_11sdp"
+                  android:id="@+id/txt_title_small_success_otp"
+                  android:layout_below="@+id/txt_title_success_otp"
+                  android:layout_marginBottom="@dimen/_20sdp"
+        />
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                  android:layout_weight="48"
+                  android:background="@drawable/custom_button_get_order"
+                  android:id="@+id/txt_done_success_otp"
+                  android:text="@string/done_big"
+                  android:textColor="@color/white"
+                  android:gravity="center"
+                  android:textSize="@dimen/_11sdp"
+                  android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                  android:layout_below="@+id/txt_title_small_success_otp"/>
+    </RelativeLayout>
+</RelativeLayout>

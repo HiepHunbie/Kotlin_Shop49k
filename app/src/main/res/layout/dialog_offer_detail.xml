@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/background_main">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+android:background="@color/background_main"
+android:layout_above="@+id/view_line_offer_detail">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_200sdp" >
+
+                    <android.support.v4.view.ViewPager
+                            android:id="@+id/pager_offer_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentTop="true" />
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                            android:id="@+id/indicator_offer_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="bottom"
+                            android:padding="10dip"
+                            app:centered="true"
+                            app:fillColor="#df0623"
+                            app:pageColor="#fff"
+                            app:snap="false" />
+                </RelativeLayout>
+                <ImageView android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp"
+                           android:src="@drawable/ic_back"
+                           android:padding="@dimen/_10sdp"
+                android:id="@+id/img_back_offer_detail"/>
+            </RelativeLayout>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="AAA"
+                      android:textColor="@color/text_black"
+                      android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                      android:padding="@dimen/_10sdp"
+                      android:id="@+id/txt_title_offer_detail"
+                      android:background="@color/white"/>
+
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:background="@color/white">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:id="@+id/layout_status_offer_detail"
+                                android:background="@drawable/custom_edittext_login_disable">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="AAAA"
+                              android:textColor="@color/text_hide_home"
+                              android:textSize="@dimen/_10sdp"
+                              android:id="@+id/txt_status_offer_detail"
+                              android:layout_centerInParent="true"
+                              android:padding="@dimen/_5sdp"/>
+                </RelativeLayout>
+
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_centerVertical="true"
+                              android:layout_alignParentRight="true">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/left_offer_count"
+                              android:textSize="@dimen/_11sdp"
+                              android:textColor="@color/text_black"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="230/"
+                              android:textSize="@dimen/_11sdp"
+                              android:id="@+id/num_left_offer_count"
+                              android:textColor="@color/text_red_home"
+                              android:layout_marginLeft="@dimen/_5sdp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="500"
+                              android:textSize="@dimen/_11sdp"
+                              android:id="@+id/num_left_offer_all"
+                              android:textColor="@color/text_red_home"
+                    />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                  android:background="@color/view_line"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                  android:background="@color/view_line"
+                  android:layout_marginTop="@dimen/_10sdp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:padding="@dimen/_10sdp"
+                          android:background="@color/white">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                               android:src="@drawable/ic_calendar_order_detail"
+                               android:padding="@dimen/_2sdp"
+                    />
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/from"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_black"
+                                  android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                                  android:layout_gravity="center_vertical"
+                                  android:layout_marginLeft="@dimen/_10sdp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text=""
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_hide_home"
+                                  android:layout_gravity="center_vertical"
+                                  android:layout_marginLeft="@dimen/_10sdp"
+                                  android:id="@+id/txt_time_offer_detail"
+                                  android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                               android:padding="@dimen/_2sdp"
+                    />
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/to"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_black"
+                                  android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                                  android:layout_gravity="center_vertical"
+                                  android:layout_marginLeft="@dimen/_10sdp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text=""
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_hide_home"
+                                  android:layout_gravity="center_vertical"
+                                  android:layout_marginLeft="@dimen/_10sdp"
+                                  android:id="@+id/txt_hour_offer_detail"
+                        android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                               android:src="@drawable/ic_calendar_order_detail"
+                               android:padding="@dimen/_2sdp"
+                    />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="GreenShop - Hàng xuất khẩu cao cấp"
+                              android:textSize="@dimen/_11sdp"
+                              android:textColor="@color/text_black"
+                              android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                              android:layout_gravity="center_vertical"
+                              android:layout_marginLeft="@dimen/_10sdp"
+                              android:id="@+id/txt_shop_name_offer_detail"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                               android:padding="@dimen/_2sdp"
+                    />
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp">
+                        <android.support.v7.widget.RecyclerView android:layout_width="match_parent" android:layout_height="wrap_content"
+                                                                android:text="AAA"
+                                                                android:textSize="@dimen/_11sdp"
+                                                                android:textColor="@color/text_hide_home"
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_marginLeft="@dimen/_10sdp"
+                                                                android:id="@+id/ryv_place_shop_offer_detail"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                android:visibility="gone">
+                    <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                               android:padding="@dimen/_2sdp"
+                    />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="@string/add_place"
+                              android:textSize="@dimen/_11sdp"
+                              android:textColor="@color/text_forgot_pass"                           android:fontFamily="@font/montserrat_medium"
+                              android:layout_gravity="center_vertical"
+                              android:layout_marginLeft="@dimen/_10sdp"
+                              android:id="@+id/txt_add_place_offer_detail"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                               android:src="@drawable/ic_calendar_order_detail"
+                               android:padding="@dimen/_2sdp"
+                    />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="Giảm giá 30%"
+                              android:textSize="@dimen/_11sdp"
+                              android:textColor="@color/text_black"
+                              android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                              android:layout_gravity="center_vertical"
+                              android:layout_marginLeft="@dimen/_10sdp"
+                              android:id="@+id/txt_sale_detail_title_offer_detail"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                               android:padding="@dimen/_2sdp"
+                    />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="Không quá 100.000đ"
+                              android:textSize="@dimen/_11sdp"
+                              android:textColor="@color/text_hide_home"
+                              android:layout_gravity="center_vertical"
+                              android:layout_marginLeft="@dimen/_10sdp"
+                              android:id="@+id/txt_sale_detail_offer_detail"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                  android:background="@color/view_line"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                  android:background="@color/view_line"
+                  android:layout_marginTop="@dimen/_10sdp"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:padding="@dimen/_10sdp"
+                          android:orientation="vertical"
+                          android:background="@color/white">
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/using"
+                          android:textColor="@color/text_black"
+                          android:textSize="@dimen/_11sdp"
+                          android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"/>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="Quét mã QR tại quầy thu ngân hoặc hỏi nhân viên cửa hàng về chương trình ưu đãi trước khi sử dụng dịch vụ."
+                          android:textColor="@color/text_black"
+                          android:textSize="@dimen/_11sdp"
+                          android:id="@+id/txt_using_offer_detail"
+                          android:layout_marginTop="@dimen/_8sdp"
+                          android:layout_marginBottom="@dimen/_8sdp"/>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                      android:background="@color/view_line"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/conditions_apply"
+                          android:textColor="@color/text_black"
+                          android:textSize="@dimen/_11sdp"
+                          android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                          android:layout_marginTop="@dimen/_8sdp"/>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="- [HN] Áp dụng cho tất cả các sản phẩm, tất cả các size và tất cả các ngày trong tuần. - [HCM] Áp dụng khi mua sản phẩm ready to wear có giá trị đơn hàng trên 2.000.000đ - Tối đa 1 voucher/khách hàng, 1 voucher/hoá…"
+                          android:textColor="@color/text_black"
+                          android:textSize="@dimen/_11sdp"
+                          android:id="@+id/txt_conditions_apply_offer_detail"
+                          android:layout_marginTop="@dimen/_8sdp"
+                          android:layout_marginBottom="@dimen/_8sdp"
+                          android:maxLines="4"
+                />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/view_more"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_forgot_pass"                           android:fontFamily="@font/montserrat_medium"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="@dimen/_10sdp"
+                          android:id="@+id/txt_view_more_offer_detail"
+                          android:gravity="center_horizontal"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                  android:background="@color/view_line"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                  android:background="@color/view_line"
+                  android:layout_marginTop="@dimen/_10sdp"/>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp"
+                            android:background="@color/white">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/offer_type"
+                          android:textColor="@color/text_black"
+                          android:textSize="@dimen/_11sdp"
+                          android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                          android:layout_marginTop="@dimen/_8sdp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Thời trang"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_hide_home"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="@dimen/_10sdp"
+                          android:id="@+id/txt_offer_type_offer_detail"
+                          android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+</ScrollView>
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+          android:background="@color/view_line"
+          android:layout_above="@+id/layout_button_offer_detail"
+          android:id="@+id/view_line_offer_detail"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/layout_button_offer_detail"
+                  android:orientation="horizontal"
+                  android:padding="@dimen/_10sdp"
+                  android:layout_alignParentBottom="true"
+    android:background="@color/white">
+
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="@dimen/_10sdp"
+                  android:text="@string/delete"
+                  android:background="@drawable/custom_status_offer_item_red"
+                  android:textColor="@color/button_login"
+                  android:textSize="@dimen/_11sdp"
+                  android:gravity="center"
+                  android:id="@+id/txt_delete_offer_detail"
+                  android:layout_marginRight="@dimen/_5sdp"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="@dimen/_10sdp"
+                  android:text="@string/edit"
+                  android:background="@drawable/custom_button_login"
+                  android:textColor="@color/white"
+                  android:textSize="@dimen/_11sdp"
+                  android:gravity="center"
+                  android:id="@+id/txt_edit_offer_detail"
+                  android:layout_marginLeft="@dimen/_5sdp"/>
+    </LinearLayout>
+</RelativeLayout>

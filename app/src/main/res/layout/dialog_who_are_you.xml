@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:layout_marginLeft="@dimen/_30sdp"
+                      android:layout_marginRight="@dimen/_30sdp"
+                      android:orientation="vertical">
+
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/who_are_you"
+                      android:textColor="@color/text_black"
+                      android:textStyle="bold"
+                      android:fontFamily="@font/montserrat_bold"
+                      android:gravity="top"
+                      android:textSize="@dimen/_14sdp"
+                      android:paddingBottom="@dimen/_3sdp"
+                      android:layout_marginTop="@dimen/_50sdp"
+                      />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/please_done_form_who_are_you"
+                      android:textColor="@color/text_hide"
+                      android:gravity="center_vertical"
+                      android:textSize="@dimen/_11sdp"
+                      android:layout_marginBottom="@dimen/_30sdp"
+            />
+
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_gravity="center_vertical"
+                      android:gravity="center_vertical"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="@dimen/_30sdp"
+                      android:layout_marginRight="@dimen/_30sdp">
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_edittext_login_dialog"
+                            android:padding="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:id="@+id/layout_merchant">
+
+                <com.github.lguipeng.library.animcheckbox.AnimCheckBox android:layout_width="@dimen/_20sdp"
+                                                                       android:layout_height="@dimen/_20sdp"
+                                                                       android:id="@+id/rdo_get_merchant"
+                                                                       android:layout_alignParentRight="true"
+                                                                       app:stroke_width="1dp"
+                                                                       app:stroke_color="@color/button_main_hide"
+                                                                       app:circle_color="@color/checkbox_green"
+                                                                       app:checked="false"
+                />
+
+                <ImageView android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp"
+                           android:src="@drawable/ic_merchant"
+                           android:layout_below="@+id/rdo_get_otp_from_mobile"
+                           android:layout_marginBottom="@dimen/_10sdp"
+                           android:id="@+id/img_merchant"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:background="@drawable/custom_view_disable"
+                              android:layout_below="@+id/img_merchant"
+                              android:padding="@dimen/_5sdp">
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="@string/merchant"
+                              android:textStyle="bold"
+                              android:textColor="@color/text_black"
+                              android:textSize="@dimen/_11sdp"
+                              android:fontFamily="@font/montserrat_bold"/>
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="@string/merchant_vi"
+                              android:textColor="@color/button_main_hide"
+                              android:textSize="@dimen/_10sdp"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_edittext_login_dialog"
+                            android:padding="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:id="@+id/layout_shipper">
+
+                <com.github.lguipeng.library.animcheckbox.AnimCheckBox android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                                                                       android:id="@+id/rdo_get_shipper"
+                                                                       android:checked="false"
+                                                                       android:button="@drawable/custom_checkbox"
+                                                                       android:gravity="top"
+                                                                       android:layout_alignParentRight="true"
+                                                                       android:buttonTint="@color/button_login"
+                                                                       app:stroke_width="1dp"
+                                                                       app:stroke_color="@color/button_main_hide"
+                                                                       app:circle_color="@color/checkbox_green"
+                                                                       app:checked="false"
+                />
+
+                <ImageView android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp"
+                           android:src="@drawable/ic_shipper"
+                           android:layout_below="@+id/rdo_get_otp_from_mobile"
+                           android:layout_marginBottom="@dimen/_10sdp"
+                           android:id="@+id/img_shipper"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:background="@drawable/custom_view_disable"
+                              android:layout_below="@+id/img_shipper"
+                              android:padding="@dimen/_5sdp">
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="@string/shipper"
+                              android:textStyle="bold"
+                              android:textColor="@color/text_black"
+                              android:textSize="@dimen/_11sdp"
+                              android:fontFamily="@font/montserrat_bold"/>
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="@string/shipper_vi"
+                              android:textColor="@color/button_main_hide"
+                              android:textSize="@dimen/_10sdp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                   android:src="@drawable/ic_back"
+                   android:id="@+id/img_back_get_otp"
+                   android:layout_marginTop="@dimen/_15sdp"
+                   android:layout_marginBottom="@dimen/_20sdp"
+                   android:layout_marginLeft="@dimen/_20sdp"
+                   android:visibility="gone"/>
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                  android:background="@drawable/custom_view_disable"
+                  android:id="@+id/txt_continue_who_are_you"
+                  android:text="@string/continue_big"
+                  android:textColor="@color/text_black"
+                  android:gravity="center"
+                  android:textSize="@dimen/_11sdp"
+                  android:textStyle="bold"
+                  android:layout_marginTop="@dimen/_20sdp"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginBottom="@dimen/_50sdp"
+                  android:layout_marginLeft="@dimen/_30sdp"
+                  android:layout_marginRight="@dimen/_30sdp"
+        android:fontFamily="@font/montserrat_bold"/>
+    </RelativeLayout>
+
+</RelativeLayout>

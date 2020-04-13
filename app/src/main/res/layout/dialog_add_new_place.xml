@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/custom_edittext_login_dialog"
+                    android:padding="@dimen/_20sdp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+        >
+
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/add_new_place"
+                      android:textColor="@color/text_black"
+                      android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                      android:gravity="center"
+                      android:textSize="@dimen/_14sdp"
+                      android:paddingBottom="@dimen/_3sdp"
+                      android:layout_marginTop="@dimen/_10sdp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/please_done_form_add_new_place"
+                      android:textColor="@color/text_hide"
+                      android:gravity="center"
+                      android:textSize="@dimen/_11sdp"
+                      android:layout_marginBottom="@dimen/_30sdp"
+
+            />
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/custom_edittext_login">
+
+                <fr.ganfra.materialspinner.MaterialSpinner android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                                                           android:id="@+id/spn_add_place_provice_and_city"
+                                                           android:textSize="@dimen/_11sdp"
+                                                           android:textColor="@color/text_black"
+                                                           app:ms_hintTextSize="@dimen/_12sdp"
+                                                           app:ms_hint="@string/provice_and_city"
+                                                           app:ms_hintColor="@color/text_black"
+                                                           app:ms_enableErrorLabel="false"
+                                                           app:ms_enableFloatingLabel="false"
+                                                           app:ms_errorColor="@color/num_circle_text_units"
+                                                           app:ms_arrowColor="@color/num_circle_text_units"
+                                                           app:ms_alignLabels="false"
+                                                           app:ms_multiline="false"
+                                                           app:ms_dropDownHintView="@layout/dropdown_hint_item"
+                                                           app:ms_hintView="@layout/dropdown_hint_item"
+                                                           app:ms_baseColor="@android:color/transparent"
+                                                           android:layout_marginRight="@dimen/_7sdp"
+                                                           app:ms_highlightColor="@color/white"
+                                                           app:ms_arrowSize="0dp"
+                                                           android:paddingLeft="@dimen/_10sdp"
+                />
+                <ImageView android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp"
+                           android:src="@drawable/ic_down"
+                           android:layout_centerVertical="true"
+                           android:layout_alignParentRight="true"
+                           android:layout_marginRight="@dimen/_15sdp"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/custom_edittext_login"
+            android:layout_marginTop="@dimen/_10sdp">
+
+                <fr.ganfra.materialspinner.MaterialSpinner android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                                                           android:id="@+id/spn_add_place_district"
+                                                           android:textSize="@dimen/_11sdp"
+                                                           app:ms_hintTextSize="@dimen/_12sdp"
+                                                           android:textColor="@color/text_black"
+                                                           app:ms_hint="@string/district"
+                                                           app:ms_hintColor="@color/text_black"
+                                                           app:ms_enableErrorLabel="false"
+                                                           app:ms_enableFloatingLabel="false"
+                                                           app:ms_errorColor="@color/num_circle_text_units"
+                                                           app:ms_arrowColor="@color/num_circle_text_units"
+                                                           app:ms_alignLabels="false"
+                                                           app:ms_multiline="false"
+                                                           app:ms_dropDownHintView="@layout/dropdown_hint_item"
+                                                           app:ms_hintView="@layout/dropdown_hint_item"
+                                                           app:ms_baseColor="@android:color/transparent"
+                                                           android:layout_marginRight="@dimen/_7sdp"
+                                                           app:ms_highlightColor="@color/white"
+                                                           app:ms_arrowSize="0dp"
+                                                           android:paddingLeft="@dimen/_10sdp"
+                />
+                <ImageView android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp"
+                           android:src="@drawable/ic_down"
+                           android:layout_centerVertical="true"
+                           android:layout_alignParentRight="true"
+                           android:layout_marginRight="@dimen/_15sdp"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/custom_edittext_login"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                <fr.ganfra.materialspinner.MaterialSpinner android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                                                           android:id="@+id/spn_add_place_ward"
+                                                           android:textSize="@dimen/_11sdp"
+                                                           android:textColor="@color/text_black"
+                                                           app:ms_hintTextSize="@dimen/_12sdp"
+                                                           app:ms_hint="@string/ward"
+                                                           app:ms_hintColor="@color/text_black"
+                                                           app:ms_enableErrorLabel="false"
+                                                           app:ms_enableFloatingLabel="false"
+                                                           app:ms_errorColor="@color/num_circle_text_units"
+                                                           app:ms_arrowColor="@color/num_circle_text_units"
+                                                           app:ms_alignLabels="false"
+                                                           app:ms_multiline="false"
+                                                           app:ms_dropDownHintView="@layout/dropdown_hint_item"
+                                                           app:ms_hintView="@layout/dropdown_hint_item"
+                                                           app:ms_baseColor="@android:color/transparent"
+                                                           android:layout_marginRight="@dimen/_7sdp"
+                                                           app:ms_highlightColor="@color/white"
+                                                           app:ms_arrowSize="0dp"
+                                                           android:paddingLeft="@dimen/_10sdp"
+                />
+                <ImageView android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp"
+                           android:src="@drawable/ic_down"
+                           android:layout_centerVertical="true"
+                           android:layout_alignParentRight="true"
+                           android:layout_marginRight="@dimen/_15sdp"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/custom_edittext_login"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                <EditText android:layout_width="match_parent" android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:paddingTop="@dimen/_5sdp"
+                          android:paddingBottom="@dimen/_5sdp"
+                android:hint="@string/your_number_home_and_street"
+                android:textColorHint="@color/text_hide_home"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/text_black"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:id="@+id/edt_your_number_home_and_street_add_new_place"/>
+            </RelativeLayout>
+
+            <TextView android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                      android:background="@drawable/custom_button_login"
+                      android:id="@+id/txt_done_add_new_place"
+                      android:text="@string/add_new_big"
+                      android:textColor="@color/white"
+                      android:gravity="center"
+                      android:textSize="@dimen/_11sdp"
+                      android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                      android:layout_marginTop="@dimen/_20sdp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                      android:id="@+id/txt_cancel_add_new_place"
+                      android:text="@string/cancel_big"
+                      android:textColor="@color/text_hide"
+                      android:gravity="center"
+                      android:textSize="@dimen/_11sdp"
+                      android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                      android:layout_marginTop="@dimen/_10sdp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_130sdp"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:id="@+id/prg_add_new_place"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:background="@color/trans_black_80"
+            android:clickable="true"/>
+</RelativeLayout>

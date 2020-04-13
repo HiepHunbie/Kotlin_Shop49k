@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="text_black">#353535</color>
+    <color name="text_hide">#777777</color>
+    <color name="edit_text_login">#F5F5F5</color>
+    <color name="button_login">#F23D0F</color>
+    <color name="text_forgot_pass">#36C2CF</color>
+    <color name="white">#ffffff</color>
+    <color name="backgroundProgressBarLogin">#F23D0F</color>
+    <color name="line_otp_disable">#F0F0F0</color>
+    <color name="text_hide_home">#A3A3A3</color>
+    <color name="num_circle_text_units">#ff2637</color>
+    <color name="button_main_hide">#ABABB5</color>
+    <color name="background_main">#F2F3F5</color>
+    <color name="yellow_home">#FFF4E2</color>
+    <color name="blue_home">#E1E0FB</color>
+    <color name="rose_home">#FEE0F0</color>
+    <color name="green_home">#E2F5EA</color>
+    <color name="text_green_home">#88C425</color>
+    <color name="view_line">#EAEAEA</color>
+    <color name="text_red_home">#F23D0F</color>
+    <color name="item_offer_gray">#F6F6F6</color>
+    <color name="red_home">#FFE8E3</color>
+    <color name="text_blue">#6E78F7</color>
+    <color name="checkbox_green">#4CD964</color>
+    <color name="trans_black_80">#80000000</color>
+    <color name="add_image_back">#C2CDDA</color>
+    <color name="orange_status">#FBF0E8</color>
+    <color name="orange">#FF671F</color>
+    <color name="red_background_ship_id">#EC1C23</color>
+    <color name="status_bar_color">#757575</color>
+</resources>

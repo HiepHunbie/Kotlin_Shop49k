@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/background_main" xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_view_order">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_50sdp"
+                    android:background="@color/white">
+        <ImageView android:layout_width="@dimen/_30sdp" android:layout_height="match_parent"
+                   android:src="@drawable/ic_back"
+                   android:id="@+id/img_back_order"
+                   android:paddingLeft="@dimen/_10sdp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:textColor="@color/text_black"
+                  android:text="@string/order"
+                  android:textSize="@dimen/_14sdp"
+                  android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                  android:id="@+id/title_tab_order"/>
+
+    </RelativeLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+          android:background="@color/view_line"/>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/background_main">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                  android:background="@color/view_line"
+                  android:layout_marginTop="@dimen/_10sdp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp"
+                            android:background="@color/white"
+            >
+                <ImageView android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_40sdp"
+                           android:src="@drawable/ic_apple_watch"
+                           android:id="@+id/img_order_detail_image"
+                           android:layout_centerVertical="true"/>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/view_all"
+                          android:textColor="@color/text_black"
+                          android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                          android:layout_toRightOf="@+id/img_order_detail_image"
+                          android:layout_marginLeft="@dimen/_10sdp"
+                          android:textSize="@dimen/_11sdp"
+                          android:id="@+id/txt_order_detail_name"/>
+
+            </RelativeLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                  android:background="@color/view_line"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                  android:background="@color/view_line"
+                  android:layout_marginTop="@dimen/_10sdp"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                >
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/text_black"
+                    android:text="@string/order_id"
+                    android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"/>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="@dimen/_11sdp"
+                              android:textColor="@color/text_forgot_pass"                           android:fontFamily="@font/montserrat_medium"
+                              android:text="@string/view_order_id"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/txt_view_ship_id"/>
+                </RelativeLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="@dimen/_11sdp"
+                          android:text="aaaaa"
+                          android:textColor="@color/text_hide_home"
+                android:id="@+id/txt_ship_id"
+                android:layout_marginTop="@dimen/_5sdp"/>
+            </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/view_line"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/view_line"
+              android:layout_marginTop="@dimen/_10sdp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:padding="@dimen/_10sdp"
+                      android:background="@color/white"
+                      android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="@dimen/_11sdp"
+                      android:textColor="@color/text_black"
+                      android:text="@string/order_status"
+                      android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_5sdp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_black"
+                          android:text="@string/order_date_"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_black"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:id="@+id/txt_order_date"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_black"
+                          android:text="@string/ship_status_"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/button_login"
+                          android:layout_marginLeft="@dimen/_3sdp"
+                          android:id="@+id/txt_ship_status"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/view_line"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/view_line"
+              android:layout_marginTop="@dimen/_10sdp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:padding="@dimen/_10sdp"
+                      android:background="@color/white"
+                      android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="@dimen/_11sdp"
+                      android:textColor="@color/text_black"
+                      android:text="@string/customer_info"
+                      android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="@dimen/_11sdp"
+                      android:textColor="@color/text_black"
+                      android:text="Hữu Lượng"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/txt_customer_name"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="@dimen/_11sdp"
+                      android:textColor="@color/text_black"
+                      android:text="099999999"
+                      android:id="@+id/txt_customer_phone"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="@dimen/_11sdp"
+                      android:textColor="@color/text_black"
+                      android:text="Xã đàn - đống đa - hà nội"
+                      android:id="@+id/txt_customer_address"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/view_line"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/view_line"
+              android:layout_marginTop="@dimen/_10sdp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:padding="@dimen/_10sdp"
+                      android:background="@color/white"
+                      android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="@dimen/_11sdp"
+                      android:textColor="@color/text_black"
+                      android:text="@string/payment_type"
+                      android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="@dimen/_11sdp"
+                      android:textColor="@color/text_black"
+                      android:text="Giao hàng và thanh toán tại nhà"
+                      android:layout_marginTop="@dimen/_5sdp"
+                      android:id="@+id/txt_payment_type"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/view_line"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/view_line"
+              android:layout_marginTop="@dimen/_10sdp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:padding="@dimen/_10sdp"
+                      android:background="@color/white"
+                      android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="@dimen/_11sdp"
+                      android:textColor="@color/text_black"
+                      android:text="@string/to_money"
+                      android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"/>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="@dimen/_5sdp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_black"
+                          android:text="@string/count"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_black"
+                          android:layout_marginLeft="@dimen/_3sdp"
+                          android:id="@+id/txt_count_order"
+                          android:text="1"
+                android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/view_line"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_black"
+                          android:text="@string/diss_count"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/button_login"
+                          android:layout_marginLeft="@dimen/_3sdp"
+                          android:id="@+id/txt_discount_number"
+                          android:text="1d"
+                          android:layout_alignParentRight="true"
+                android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"/>
+            </RelativeLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                  android:background="@color/view_line"
+                  android:layout_marginTop="@dimen/_10sdp"
+                  android:layout_marginBottom="@dimen/_10sdp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_5sdp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/text_black"
+                          android:text="@string/provisional"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="@dimen/_11sdp"
+                          android:textColor="@color/button_login"
+                          android:layout_marginLeft="@dimen/_3sdp"
+                          android:id="@+id/txt_provisional_order"
+                          android:text="10000d"
+                          android:layout_alignParentRight="true"
+                android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"/>
+            </RelativeLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                  android:background="@color/view_line"
+                  android:layout_marginTop="@dimen/_10sdp"
+                  android:layout_marginBottom="@dimen/_10sdp"/>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

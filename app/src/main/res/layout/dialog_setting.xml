@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/background_main" xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_view_setting">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_50sdp"
+                    android:background="@color/white">
+        <ImageView android:layout_width="@dimen/_30sdp" android:layout_height="match_parent"
+                   android:src="@drawable/ic_back"
+                   android:id="@+id/img_back_setting"
+                   android:paddingLeft="@dimen/_10sdp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:textColor="@color/text_black"
+                  android:text="@string/setting_vi"
+                  android:textSize="@dimen/_14sdp"
+                  android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                  android:id="@+id/title_tab_setting"/>
+
+    </RelativeLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+          android:background="@color/view_line"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/custom_edittext_login_dialog"
+    android:layout_margin="@dimen/_10sdp"
+    android:padding="@dimen/_10sdp">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/layout_setting_password">
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+            app:srcCompat = "@drawable/ic_padlock"
+            android:id="@+id/img_padlock"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_1sdp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_11sdp"
+            android:layout_toRightOf="@+id/img_padlock"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"/>
+
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                       app:srcCompat = "@drawable/ic_next_svg"
+                       android:id="@+id/img_password_next"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"
+                       android:paddingRight="@dimen/_8sdp"
+                       android:paddingTop="@dimen/_4sdp"
+                       android:paddingBottom="@dimen/_4sdp"
+                        android:rotation="180"
+            android:scaleType="fitStart"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/change"
+                      android:textColor="@color/text_hide_home"
+                      android:textSize="@dimen/_11sdp"
+                      android:layout_toLeftOf="@+id/img_password_next"
+                      android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/view_line"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:id="@+id/layout_setting_secutiry">
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                       app:srcCompat = "@drawable/ic_fingerprint"
+                       android:id="@+id/img_fingerprint"
+                       android:layout_centerVertical="true"
+                       android:padding="@dimen/_1sdp"/>
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical"
+                          android:layout_toRightOf="@+id/img_fingerprint"
+                          android:layout_centerVertical="true"
+                          android:layout_marginLeft="@dimen/_5sdp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/security"
+                          android:textColor="@color/text_black"
+                          android:textSize="@dimen/_11sdp"             />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/touch_id_face_id"
+                          android:textColor="@color/text_hide_home"
+                          android:textSize="@dimen/_11sdp"/>
+            </LinearLayout>
+
+
+            <Switch
+                    android:id="@+id/swt_security"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:gravity="right"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_switch"
+                    android:thumb="@android:color/transparent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:id="@+id/layout_setting_notification"
+    android:background="@drawable/custom_edittext_login_dialog"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+    >
+        <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                   app:srcCompat = "@drawable/ic_bell"
+                   android:id="@+id/img_bell"
+                   android:layout_centerVertical="true"
+                   android:padding="@dimen/_1sdp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/notification"
+                  android:textColor="@color/text_black"
+                  android:textSize="@dimen/_11sdp"
+                  android:layout_toRightOf="@+id/img_bell"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="@dimen/_5sdp"/>
+
+        <Switch
+                android:id="@+id/swt_notification"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_switch"
+                android:thumb="@android:color/transparent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+        />
+    </RelativeLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/custom_edittext_login_dialog"
+    android:padding="@dimen/_10sdp"
+    android:text="@string/log_out_big"
+    android:textSize="@dimen/_11sdp"
+    android:textColor="@color/button_login"
+    android:gravity="center"
+    android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+    android:id="@+id/txt_setting_logout"/>
+</LinearLayout>

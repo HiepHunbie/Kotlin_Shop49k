@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:background="@color/background_main" xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/layout_view_shop_info">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_50sdp"
+                        android:background="@color/white">
+            <ImageView android:layout_width="@dimen/_30sdp" android:layout_height="match_parent"
+                       android:src="@drawable/ic_back"
+                       android:id="@+id/img_back_shop_info"
+                       android:paddingLeft="@dimen/_10sdp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/text_black"
+                      android:text="@string/shop_info"
+                      android:textSize="@dimen/_14sdp"
+                      android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                      android:id="@+id/title_tab_shop_info"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_alignParentRight="true"
+                      android:textColor="@color/text_forgot_pass"                           android:fontFamily="@font/montserrat_medium"
+                      android:text="@string/edit"
+                      android:textSize="@dimen/_11sdp"
+                      android:textStyle="bold"
+                      android:paddingRight="@dimen/_10sdp"
+                      android:id="@+id/txt_save_edit_shop_info"
+                      android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/view_line"/>
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:background="@color/background_main">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:padding="@dimen/_10sdp"
+            >
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:padding="@dimen/_10sdp"
+                              android:background="@drawable/custom_edittext_login_dialog"
+                              android:orientation="vertical">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                    >
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/shop_name"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_hide_home"
+                                  android:layout_centerVertical="true"
+                                  android:id="@+id/txt_shop_name"/>
+
+                        <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_black"
+                                  android:background="@color/white"
+                                  android:layout_alignParentRight="true"
+                                  android:textColorHint="@color/text_forgot_pass"
+                                  android:gravity="right"
+                                  android:enabled="false"
+                                  android:id="@+id/edt_shop_name"
+                                  android:layout_toRightOf="@+id/txt_shop_name"
+                                  android:paddingLeft="@dimen/_10sdp"
+                                  android:hint="@string/hint_shop_info"
+
+                        />
+                    </RelativeLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                          android:background="@color/view_line"
+                          android:layout_marginTop="@dimen/_10sdp"
+                          android:layout_marginBottom="@dimen/_10sdp"/>
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                    >
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/founding_day"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_hide_home"
+                                  android:layout_centerVertical="true"
+                                  android:id="@+id/txt_founding_day"/>
+
+                        <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_black"
+                                  android:background="@color/white"
+                                  android:textColorHint="@color/text_forgot_pass"
+                                  android:gravity="right"
+                                  android:enabled="false"
+                                  android:id="@+id/edt_founding_day"
+                                  android:layout_toLeftOf="@+id/img_founding_day"
+                                  android:layout_toRightOf="@+id/txt_founding_day"
+                                  android:paddingLeft="@dimen/_10sdp"
+                                  android:layout_centerVertical="true"
+                                  android:hint="@string/hint_founding_day"/>
+                        <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                                   app:srcCompat="@drawable/ic_calendar_order_detail"
+                                   android:tint="@color/text_black"
+                                   android:layout_alignParentRight="true"
+                                   android:layout_centerVertical="true"
+                                   android:id="@+id/img_founding_day"
+                                   android:layout_marginLeft="@dimen/_5sdp"
+                                   android:padding="@dimen/_1sdp"
+                                   android:visibility="gone"/>
+                    </RelativeLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                          android:background="@color/view_line"
+                          android:layout_marginTop="@dimen/_10sdp"
+                          android:layout_marginBottom="@dimen/_10sdp"/>
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                    >
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/bussiness_number"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_hide_home"
+                                  android:layout_centerVertical="true"/>
+
+                        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_black"
+                                  android:background="@color/white"
+                                  android:layout_alignParentRight="true"
+                                  android:textColorHint="@color/text_forgot_pass"
+                                  android:gravity="right"
+                                  android:enabled="false"
+                                  android:id="@+id/edt_edit_bussiness_number"
+                                  android:hint="@string/hint_bussiness_number"
+                        />
+                    </RelativeLayout>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:layout_marginTop="@dimen/_10sdp"
+                                  android:weightSum="2"
+                    >
+                        <RelativeLayout android:layout_width="0dp" android:layout_height="@dimen/_100sdp"
+                                        android:background="@drawable/custom_add_image"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:orientation="vertical">
+
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="match_parent"
+                                          android:orientation="vertical"
+                                          android:layout_centerInParent="true"
+                                          android:gravity="center"
+                                          android:id="@+id/layout_add_image_before_citizen_id"
+                                          android:visibility="visible">
+                                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                              android:layout_centerInParent="true"
+                                              android:orientation="horizontal"
+                                              android:gravity="center"
+                                >
+                                    <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                                               app:srcCompat="@drawable/ic_add"
+                                               android:tint="@color/button_login"
+                                               android:padding="@dimen/_3sdp"
+                                    />
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                              android:text="@string/upload"
+                                              android:textColor="@color/button_login"
+                                              android:textSize="@dimen/_11sdp"
+                                    />
+                                </LinearLayout>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:text="@string/add_before_citizen_image"
+                                          android:gravity="center"
+                                          android:layout_centerHorizontal="true"
+                                          android:textColor="@color/text_hide_home"
+                                          android:textSize="@dimen/_10sdp"
+                                          android:layout_below="@+id/layout_add_image_before_citizen_id"/>
+                            </LinearLayout>
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                                       android:id="@+id/img_add_image_before_citizen_id"
+                                       android:scaleType="centerCrop"/>
+                            <ProgressBar
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_100sdp"
+                                    android:padding="@dimen/_140sdp"
+                                    android:minHeight="50dp"
+                                    android:minWidth="50dp"
+                                    android:id="@+id/prg_before_citizen_id"
+                                    android:visibility="gone"
+                                    android:layout_centerInParent="true"
+                                    android:background="@android:color/transparent"
+                                    android:clickable="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="0dp" android:layout_height="@dimen/_100sdp"
+                                        android:background="@drawable/custom_add_image"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:orientation="vertical"
+                                        android:gravity="center"
+                        android:visibility="gone">
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="match_parent"
+                                          android:orientation="vertical"
+                                          android:gravity="center"
+                                          android:id="@+id/layout_add_image_behind_citizen_id"
+                                          android:visibility="visible">
+                                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                              android:layout_centerInParent="true"
+                                              android:orientation="horizontal"
+                                              android:gravity="center"
+                                              android:layout_gravity="center">
+                                    <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                                               app:srcCompat="@drawable/ic_add"
+                                               android:tint="@color/button_login"
+                                               android:padding="@dimen/_3sdp"
+                                    />
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                              android:text="@string/upload"
+                                              android:textColor="@color/button_login"
+                                              android:textSize="@dimen/_11sdp"
+                                    />
+                                </LinearLayout>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:text="@string/add_behind_citizen_image"
+                                          android:gravity="center"
+                                          android:textColor="@color/text_hide_home"
+                                          android:layout_centerHorizontal="true"
+                                          android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                                       android:id="@+id/img_add_image_behind_citizen_id"
+                                       android:scaleType="centerCrop"/>
+                            <ProgressBar
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_100sdp"
+                                    android:padding="@dimen/_140sdp"
+                                    android:minHeight="50dp"
+                                    android:minWidth="50dp"
+                                    android:id="@+id/prg_behind_citizen_id"
+                                    android:visibility="gone"
+                                    android:layout_centerInParent="true"
+                                    android:background="@android:color/transparent"
+                                    android:clickable="true"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:padding="@dimen/_10sdp"
+                              android:background="@drawable/custom_edittext_login_dialog"
+                              android:orientation="vertical"
+                              android:layout_marginTop="@dimen/_10sdp">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                    >
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/introduce"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_hide_home"
+                                  android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="@dimen/_11sdp"
+                              android:textColor="@color/text_black"
+                              android:background="@color/white"
+                              android:layout_alignParentRight="true"
+                              android:textColorHint="@color/text_hide_home"
+                              android:enabled="false"
+                              android:id="@+id/edt_introduce"
+                              android:layout_marginTop="@dimen/_5sdp"
+                              android:layout_marginBottom="@dimen/_5sdp"
+                              android:hint="@string/hint_introduce"
+                              android:maxLines="4"
+                              android:text="Cty CP Kiến trúc và xây dựng Trịnh Gia được thành lập vào năm 2017, ban đầu hoạt động trong lĩnh vực thiết kế nhà ở, thiết kế lâu đài, thiết kế biệt thự cao cấp. Tới nay mở rộng ra sản xuất đồ gỗ và trang trí nội thất căn hộ, nhà ở …"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/view_more"
+                              android:textSize="@dimen/_11sdp"
+                              android:textColor="@color/text_hide_home"
+                              android:layout_centerVertical="true"
+                              android:layout_gravity="center"
+                              android:id="@+id/txt_view_more_shop_info"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:padding="@dimen/_10sdp"
+                              android:background="@drawable/custom_edittext_login_dialog"
+                              android:orientation="vertical"
+                              android:layout_marginTop="@dimen/_10sdp">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                    >
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/provice_and_city"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_hide_home"
+                                  android:layout_centerVertical="true"/>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_forgot_pass"                           android:fontFamily="@font/montserrat_medium"
+                                  android:background="@color/white"
+                                  android:layout_alignParentRight="true"
+                                  android:gravity="right"
+                                  android:enabled="false"
+                                  android:text="@string/select_provice_and_city"
+                                  android:id="@+id/txt_select_provice_and_city"/>
+                    </RelativeLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                          android:background="@color/view_line"
+                          android:layout_marginTop="@dimen/_10sdp"
+                          android:layout_marginBottom="@dimen/_10sdp"/>
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                    >
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/district"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_hide_home"
+                                  android:layout_centerVertical="true"/>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_forgot_pass"                           android:fontFamily="@font/montserrat_medium"
+                                  android:background="@color/white"
+                                  android:layout_alignParentRight="true"
+                                  android:gravity="right"
+                                  android:enabled="false"
+                                  android:text="@string/select_district"
+                                  android:id="@+id/txt_select_district"/>
+                    </RelativeLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                          android:background="@color/view_line"
+                          android:layout_marginTop="@dimen/_10sdp"
+                          android:layout_marginBottom="@dimen/_10sdp"/>
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                    >
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/ward"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_hide_home"
+                                  android:layout_centerVertical="true"/>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_forgot_pass"                           android:fontFamily="@font/montserrat_medium"
+                                  android:background="@color/white"
+                                  android:layout_alignParentRight="true"
+                                  android:gravity="right"
+                                  android:enabled="false"
+                                  android:text="@string/select_ward"
+                                  android:id="@+id/txt_select_ward"/>
+                    </RelativeLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                          android:background="@color/view_line"
+                          android:layout_marginTop="@dimen/_10sdp"
+                          android:layout_marginBottom="@dimen/_10sdp"/>
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                    >
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/address"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_hide_home"
+                                  android:layout_centerVertical="true"/>
+
+                        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_forgot_pass"                           android:fontFamily="@font/montserrat_medium"
+                                  android:background="@color/white"
+                                  android:layout_alignParentRight="true"
+                                  android:gravity="right"
+                                  android:enabled="false"
+                                  android:hint="@string/select_address"
+                                  android:textColorHint="@color/text_forgot_pass"
+                                  android:id="@+id/txt_select_address"/>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:padding="@dimen/_10sdp"
+                              android:background="@drawable/custom_edittext_login_dialog"
+                              android:orientation="vertical"
+                              android:layout_marginTop="@dimen/_10sdp">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                    >
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/career"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_hide_home"
+                                  android:layout_centerVertical="true"/>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:textColor="@color/text_black"
+                                  android:background="@color/white"
+                                  android:layout_alignParentRight="true"
+                                  android:textColorHint="@color/text_forgot_pass"
+                                  android:gravity="right"
+                                  android:enabled="false"
+                                  android:id="@+id/edt_career"
+                                  android:hint="@string/choice_career"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_130sdp"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:id="@+id/prg_shop_info"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:background="@color/trans_black_80"
+            android:clickable="true"/>
+</RelativeLayout>

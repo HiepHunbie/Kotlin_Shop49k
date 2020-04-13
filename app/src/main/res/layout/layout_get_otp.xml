@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:layout_marginLeft="@dimen/_30sdp"
+                      android:layout_marginRight="@dimen/_30sdp"
+                      android:orientation="vertical">
+
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/get_otp_code"
+                      android:textColor="@color/text_black"
+                      android:textStyle="bold" android:fontFamily="@font/montserrat_bold"
+                      android:gravity="top"
+                      android:textSize="@dimen/_14sdp"
+                      android:paddingBottom="@dimen/_3sdp"
+                      android:layout_marginTop="@dimen/_50sdp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/please_done_form_get_otp_code"
+                      android:textColor="@color/text_hide"
+                      android:gravity="center_vertical"
+                      android:textSize="@dimen/_11sdp"
+                      android:layout_marginBottom="@dimen/_30sdp"
+            />
+
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_gravity="center_vertical"
+                      android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+                      android:layout_marginLeft="@dimen/_30sdp"
+                      android:layout_marginRight="@dimen/_30sdp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+            android:visibility="visible"
+            android:id="@+id/layout_get_otp_by_phone">
+
+                <RadioButton android:layout_width="wrap_content"
+                                                                       android:layout_height="wrap_content"
+                                                                       android:id="@+id/rdo_get_otp_from_mobile"
+                                                                       android:layout_marginRight="@dimen/_3sdp"
+                             android:buttonTint="@color/button_login"
+                             android:checked="true"
+                />
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical">
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="@string/send_to_message"
+                              android:textColor="@color/text_hide"
+                              android:gravity="center_vertical"
+                              android:textSize="@dimen/_11sdp"
+                    />
+
+                    <TextView android:layout_width="match_parent" android:layout_height="@dimen/_30sdp"
+                              android:layout_weight="48"
+                              android:textSize="@dimen/_11sdp"
+                              android:text="@string/hint_user_name"
+                              android:textColor="@color/text_black"
+                              android:textColorHint="@color/text_black"
+                              android:id="@+id/edt_your_phone"
+                    android:gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="@dimen/_10sdp"
+                          android:id="@+id/layout_get_otp_by_email">
+
+                <RadioButton android:layout_width="wrap_content"
+                                                                       android:layout_height="wrap_content"
+                                                                       android:id="@+id/rdo_get_otp_from_email"
+                                                                       android:layout_marginRight="@dimen/_3sdp"
+                                                                      android:buttonTint="@color/button_login"
+                             android:checked="true"
+                />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical">
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="@string/send_to_email"
+                              android:textColor="@color/text_hide"
+                              android:gravity="center_vertical"
+                              android:textSize="@dimen/_11sdp"
+                    />
+
+                    <TextView android:layout_width="match_parent" android:layout_height="@dimen/_30sdp"
+                              android:layout_weight="48"
+                              android:textSize="@dimen/_11sdp"
+                              android:text="@string/your_email"
+                              android:textColor="@color/text_black"
+                              android:textColorHint="@color/text_black"
+                              android:id="@+id/edt_user_name"
+                    android:gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                   android:src="@drawable/ic_back"
+                   android:id="@+id/img_back_get_otp"
+                   android:layout_marginTop="@dimen/_15sdp"
+                   android:layout_marginBottom="@dimen/_20sdp"
+                   android:layout_marginLeft="@dimen/_20sdp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                  android:background="@drawable/custom_button_login"
+                  android:id="@+id/txt_continue_get_otp"
+                  android:text="@string/continue_big"
+                  android:textColor="@color/white"
+                  android:gravity="center"
+                  android:textSize="@dimen/_11sdp"
+                  android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                  android:layout_marginTop="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_50sdp"
+                  android:layout_marginLeft="@dimen/_30sdp"
+                  android:layout_marginRight="@dimen/_30sdp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

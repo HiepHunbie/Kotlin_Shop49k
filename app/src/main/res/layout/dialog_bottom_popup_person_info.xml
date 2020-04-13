@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/trans_black_80">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:background="@drawable/custom_dialog_botton_offer"
+                  android:padding="@dimen/_1sdp"
+                  android:layout_alignParentBottom="true">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/select_offer"
+                      android:textColor="@color/text_black"
+                      android:textSize="@dimen/_14sdp"
+                      android:textStyle="bold"                       android:fontFamily="@font/montserrat_bold"
+                      android:layout_centerInParent="true"
+                      android:id="@+id/txt_title_popup"
+            />
+
+            <ImageView android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp"
+                       android:id="@+id/img_close_popup"
+                       android:src="@drawable/ic_delete_gray"
+                       android:padding="@dimen/_10sdp"
+                       android:layout_alignParentRight="true"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/ryv_popup_bottom"
+            android:background="@color/white"></android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
